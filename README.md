@@ -5,7 +5,14 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
 | Arc-SQL BPA | Logic App used to Aeses with Azure OpenAI your DBs on Azure ARC Solution |
 | Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System |
 
+<h2>Arc-SQL BPS</h2>
 
+ 
+This template can be used for the deployment of a Logic App in order to be triggered by Sentinel during the creation of an incident.
+ 
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FArc-SQL%2520BPA%2FSQLBPA-Template.json" target="_blank">
+<img src="https://aka.ms/deploytoazurebutton"/>
+</a>
 
 ## Contributing
 
