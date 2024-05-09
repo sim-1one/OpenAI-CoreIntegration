@@ -1,2 +1,25 @@
-# OpenAI-CoreIntegration
-Raccolta di soluzioni basate su LogicApp ed OpenAI
+Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this site is to provide sample OpenAI integration with LogicApp
+
+ **Solution Name** | **Information** |
+| ------------- | ------------- |
+| Arc-SQL BPA | Logic App used to Aeses with Azure OpenAI your DBs on Azure ARC Solution |
+| Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System |
+
+
+
+## Contributing
+
+Microsoft VBD OpenAI-CoreIntegration is designed to offer customers customizable solutions that leverage the power of Microsoft's Logic Apps and the advanced AI capabilities of OpenAI. This versatile Business Development Framework enables seamless integration with a variety of Microsoft services, including Azure ARC and Sentinel, enhancing security, scalability, and operational efficiency. Through this platform, users can create robust, intelligent applications capable of dynamically responding to evolving business and security needs.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [siverza@microsoft.com](mailto:siverza@microsoft.com) with any additional questions or comments.
+contact [tommasosacco@microsoft.com](mailto:tommasosacco@microsoft.com) with any additional questions or comments.
+
+## Trademarks
+
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
+trademarks or logos is subject to and must follow
+[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
+Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
+Any use of third-party trademarks or logos are subject to those third-party's policies.
