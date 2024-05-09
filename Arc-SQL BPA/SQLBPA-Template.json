@@ -7,19 +7,19 @@
             "type": "String"
         },
         "connections_azuremonitorlogs_externalid": {
-            "defaultValue": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/azuremonitorlogs",
+            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/azuremonitorlogs",
             "type": "String"
         },
         "connections_office365_externalid": {
-            "defaultValue": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/office365",
+            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/office365",
             "type": "String"
         },
         "connections_onedriveforbusiness_externalid": {
-            "defaultValue": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/onedriveforbusiness",
+            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/onedriveforbusiness",
             "type": "String"
         },
         "connections_teams_externalid": {
-            "defaultValue": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/teams",
+            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/teams",
             "type": "String"
         }
     },
@@ -29,7 +29,7 @@
             "type": "Microsoft.Logic/workflows",
             "apiVersion": "2017-07-01",
             "name": "[parameters('workflows_OpenAI_SqlAssessmentResult_name')]",
-            "location": "westeurope",
+            "location": "[resourceGroup().location]",
             "identity": {
                 "type": "SystemAssigned"
             },
@@ -582,7 +582,7 @@
                                     "Body": "<p>@{outputs('ComposeMailMessage')}</p>",
                                     "Importance": "Normal",
                                     "Subject": "Sql BPA Result - OpenAI comment",
-                                    "To": "siverza@microsoft.com;tommasosacco@microsoft.com;saverio.lorenzini@microsoft.com;giuseppe.zagarrio@microsoft.com;dmala@microsoft.com"
+                                    "To": "replace with email to send to"
                                 },
                                 "host": {
                                     "connection": {
@@ -602,22 +602,22 @@
                             "azuremonitorlogs": {
                                 "connectionId": "[parameters('connections_azuremonitorlogs_externalid')]",
                                 "connectionName": "azuremonitorlogs",
-                                "id": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/providers/Microsoft.Web/locations/westeurope/managedApis/azuremonitorlogs"
+                                "id": "/subscriptions/replacewithsubid/providers/Microsoft.Web/locations/replacewithlocation/managedApis/azuremonitorlogs"
                             },
                             "office365": {
                                 "connectionId": "[parameters('connections_office365_externalid')]",
                                 "connectionName": "office365",
-                                "id": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/providers/Microsoft.Web/locations/westeurope/managedApis/office365"
+                                "id": "/subscriptions/replacewithsubid/providers/Microsoft.Web/locations/replacewithlocation/managedApis/office365"
                             },
                             "onedriveforbusiness": {
                                 "connectionId": "[parameters('connections_onedriveforbusiness_externalid')]",
                                 "connectionName": "onedriveforbusiness",
-                                "id": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/providers/Microsoft.Web/locations/westeurope/managedApis/onedriveforbusiness"
+                                "id": "/subscriptions/replacewithsubid/providers/Microsoft.Web/locations/replacewithlocation/managedApis/onedriveforbusiness"
                             },
                             "teams": {
                                 "connectionId": "[parameters('connections_teams_externalid')]",
                                 "connectionName": "teams",
-                                "id": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/providers/Microsoft.Web/locations/westeurope/managedApis/teams"
+                                "id": "/subscriptions/replacewithsubid/providers/Microsoft.Web/locations/replacewithlocation/managedApis/teams"
                             }
                         }
                     }
