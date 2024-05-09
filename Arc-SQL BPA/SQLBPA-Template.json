@@ -7,19 +7,19 @@
             "type": "String"
         },
         "connections_azuremonitorlogs_externalid": {
-            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/azuremonitorlogs",
+            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/replacewithRG/providers/Microsoft.Web/connections/azuremonitorlogs",
             "type": "String"
         },
         "connections_office365_externalid": {
-            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/office365",
+            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/replacewithRG/providers/Microsoft.Web/connections/office365",
             "type": "String"
         },
         "connections_onedriveforbusiness_externalid": {
-            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/onedriveforbusiness",
+            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/replacewithRG/providers/Microsoft.Web/connections/onedriveforbusiness",
             "type": "String"
         },
         "connections_teams_externalid": {
-            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/rg-openAI-we-001/providers/Microsoft.Web/connections/teams",
+            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/replacewithRG/providers/Microsoft.Web/connections/teams",
             "type": "String"
         }
     },
@@ -602,22 +602,22 @@
                             "azuremonitorlogs": {
                                 "connectionId": "[parameters('connections_azuremonitorlogs_externalid')]",
                                 "connectionName": "azuremonitorlogs",
-                                "id": "/subscriptions/replacewithsubid/providers/Microsoft.Web/locations/replacewithlocation/managedApis/azuremonitorlogs"
+                                "id": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/providers/Microsoft.Web/locations/westeurope/managedApis/azuremonitorlogs"
                             },
                             "office365": {
                                 "connectionId": "[parameters('connections_office365_externalid')]",
                                 "connectionName": "office365",
-                                "id": "/subscriptions/replacewithsubid/providers/Microsoft.Web/locations/replacewithlocation/managedApis/office365"
+                                "id": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/providers/Microsoft.Web/locations/westeurope/managedApis/office365"
                             },
                             "onedriveforbusiness": {
                                 "connectionId": "[parameters('connections_onedriveforbusiness_externalid')]",
                                 "connectionName": "onedriveforbusiness",
-                                "id": "/subscriptions/replacewithsubid/providers/Microsoft.Web/locations/replacewithlocation/managedApis/onedriveforbusiness"
+                                "id": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/providers/Microsoft.Web/locations/westeurope/managedApis/onedriveforbusiness"
                             },
                             "teams": {
                                 "connectionId": "[parameters('connections_teams_externalid')]",
                                 "connectionName": "teams",
-                                "id": "/subscriptions/replacewithsubid/providers/Microsoft.Web/locations/replacewithlocation/managedApis/teams"
+                                "id": "/subscriptions/fd5f389d-ea14-4a82-be8e-8e3d91a5a56e/providers/Microsoft.Web/locations/westeurope/managedApis/teams"
                             }
                         }
                     }
