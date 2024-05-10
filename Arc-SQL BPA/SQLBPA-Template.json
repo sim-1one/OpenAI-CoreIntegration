@@ -2,8 +2,8 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "workflows_OpenAI_SqlAssessmentResult_name": {
-            "defaultValue": "OpenAI-SqlAssessmentResult",
+        "workflows_SQL_BPA_Generalized_name": {
+            "defaultValue": "SQL-BPA-Generalized",
             "type": "String"
         },
         "connections_azuremonitorlogs_externalid": {
@@ -12,14 +12,6 @@
         },
         "connections_office365_externalid": {
             "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/replacewithRG/providers/Microsoft.Web/connections/office365",
-            "type": "String"
-        },
-        "connections_onedriveforbusiness_externalid": {
-            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/replacewithRG/providers/Microsoft.Web/connections/onedriveforbusiness",
-            "type": "String"
-        },
-        "connections_teams_externalid": {
-            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/replacewithRG/providers/Microsoft.Web/connections/teams",
             "type": "String"
         }
     },
@@ -34,7 +26,7 @@
                 "type": "SystemAssigned"
             },
             "properties": {
-                "state": "Enabled",
+                "state": "Disabled",
                 "definition": {
                     "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
                     "contentVersion": "1.0.0.0",
@@ -80,12 +72,12 @@
                     "actions": {
                         "ComposeMailMessage": {
                             "runAfter": {
-                                "Get_file_thumbnail": [
+                                "FilePathVariabile": [
                                     "Succeeded"
                                 ]
                             },
                             "type": "Compose",
-                            "inputs": "<!DOCTYPE html>\n<html>\n<p><strong>Sistema automatico di Report SQL B.P.Assessment - SiverzaLab Environment</strong><br>\n<br>\nSalve, di seguito i percorsi al risultato del SQL BPA con commenti dell'AI inerenti le severity High<br></p>\n-------------------------------------------------------------------------------------<br>\n</br>\n<br>\nLink al OnDrive: <a href=\"https://microsofteur-my.sharepoint.com/:f:/g/personal/siverza_microsoft_com/EvfvZ6zE0YBEjucac-F41sAB3AuzKR9rZVLF3kBJiMfarQ?e=5vRGa6\">OnDrive Share</a><br>\n</br>\n<br>\n<p><h5><strong>\n(*) Il sistema genera i dati sfruttando l'OpenAI pertando protrebbero verificarsi delle anomalie nel testo inerenti alla formattazione o al contenuto.<br></strong></p></h5>\n<img src=\"@{body('Get_file_thumbnail')?['Url']}?width=400 height=150\" alt=\"\" />\n\n</html>"
+                            "inputs": "<!DOCTYPE html>\n<html>\n<p><strong>Automatic SQL Best Practice Assessment Report System</strong><br>\n<br>\nHi, below are the results of the SQL BPA with comments from the AI regarding the High severity<br></p>\n-------------------------------------------------------------------------------------<br>\n</br>\n<br>\n<p><h5><strong>\n(*) The system generates the data using OpenAI, therefore anomalies in the text relating to formatting or content may occur.<br></strong></p></h5>\n<img src=\"?width=400 height=150\" alt=\"\" />\n\n</html>"
                         },
                         "Create_HTML_table": {
                             "runAfter": {
@@ -97,33 +89,6 @@
                             "inputs": {
                                 "format": "HTML",
                                 "from": "@variables('CSV')"
-                            }
-                        },
-                        "Create_file_OneDrive": {
-                            "runAfter": {
-                                "FilePathVariabile": [
-                                    "Succeeded"
-                                ]
-                            },
-                            "type": "ApiConnection",
-                            "inputs": {
-                                "body": "@variables('HTML-custom')",
-                                "host": {
-                                    "connection": {
-                                        "name": "@parameters('$connections')['onedriveforbusiness']['connectionId']"
-                                    }
-                                },
-                                "method": "post",
-                                "path": "/datasets/default/files",
-                                "queries": {
-                                    "folderPath": "/SQLAssessmentResultAI",
-                                    "name": "SqlResult@{formatDateTime(convertTimeZone(utcNow(),'UTC','Romance Standard Time'), 'yyyy-MM-ddTHH.mm')}.html"
-                                }
-                            },
-                            "runtimeConfiguration": {
-                                "contentTransfer": {
-                                    "transferMode": "Chunked"
-                                }
                             }
                         },
                         "FilePathVariabile": {
@@ -430,29 +395,6 @@
                             },
                             "type": "Foreach"
                         },
-                        "Get_file_thumbnail": {
-                            "runAfter": {
-                                "Create_file_OneDrive": [
-                                    "Succeeded"
-                                ]
-                            },
-                            "metadata": {
-                                "b!fS7Jas5HlkaOhXpkhLYzfd9QP0ntax9Cl0YkGsMxgFxCbzacFs3eSrkKpUzR2rua.01IKNNTBPUV6FFJWHLFVH2QGRHKCK747N6": "/Pictures/LogicappImage/siverzalab.jpg"
-                            },
-                            "type": "ApiConnection",
-                            "inputs": {
-                                "host": {
-                                    "connection": {
-                                        "name": "@parameters('$connections')['onedriveforbusiness']['connectionId']"
-                                    }
-                                },
-                                "method": "get",
-                                "path": "/datasets/default/files/@{encodeURIComponent(encodeURIComponent('b!fS7Jas5HlkaOhXpkhLYzfd9QP0ntax9Cl0YkGsMxgFxCbzacFs3eSrkKpUzR2rua.01IKNNTBPUV6FFJWHLFVH2QGRHKCK747N6'))}/thumbnail",
-                                "queries": {
-                                    "size": "Large"
-                                }
-                            }
-                        },
                         "HTML-custom": {
                             "runAfter": {
                                 "Create_HTML_table": [
@@ -503,30 +445,6 @@
                                 ]
                             }
                         },
-                        "Post_message_in_a_chat_or_channel": {
-                            "runAfter": {
-                                "Send_an_email_(V2)": [
-                                    "Succeeded"
-                                ]
-                            },
-                            "type": "ApiConnection",
-                            "inputs": {
-                                "body": {
-                                    "messageBody": "<p>@{outputs('ComposeMailMessage')}<br>\n<br>\n<br>\nSmartSQL BPA AI</p>",
-                                    "recipient": {
-                                        "channelId": "19:d2ad86692e744d7e8f6b8260f51c4945@thread.tacv2",
-                                        "groupId": "435ab954-83a0-4be6-b87e-67835563137c"
-                                    }
-                                },
-                                "host": {
-                                    "connection": {
-                                        "name": "@parameters('$connections')['teams']['connectionId']"
-                                    }
-                                },
-                                "method": "post",
-                                "path": "/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}"
-                            }
-                        },
                         "Question": {
                             "runAfter": {
                                 "Open_AI_API_Key": [
@@ -547,7 +465,7 @@
                             "runAfter": {},
                             "type": "ApiConnection",
                             "inputs": {
-                                "body": "SQL_AssResult",
+                                "body": "let selectedCategories = dynamic([]);\nlet selectedTotSev = dynamic([]);\nSqlAssessment_CL\n| extend asmt = parse_csv(RawData)\n| where asmt[11] =~ \"MSSQLSERVER\" \n| extend\n    AsmtId=tostring(asmt[1]),\n    CheckId=tostring(asmt[2]),\n    DisplayString=asmt[3],\n    Description=tostring(asmt[4]),\n    HelpLink=asmt[5],\n    TargetType=case(asmt[6] == 1, \"Server\", asmt[6] == 2, \"Database\", \"\"),\n    TargetName=tostring(asmt[7]), \n    Severity=case(asmt[8] == 30, \"High\", asmt[8] == 20, \"Medium\", asmt[8] == 10, \"Low\", asmt[8] == 0, \"Information\", asmt[8] == 1, \"Warning\", asmt[8] == 2, \"Critical\", \"Passed\"),\n    Message=tostring(asmt[9]),\n    TagsArr=split(tostring(asmt[10]), \",\"),\n    Sev = toint(asmt[8])\n| where isnotempty(AsmtId)  \n    and (set_has_element(dynamic(['*']), CheckId) or \"'*'\" == \"'*'\")\n    and (set_has_element(dynamic(['*']), TargetName) or \"'*'\" == \"'*'\")\n    and set_has_element(dynamic([30, 20, 10, 0]), Sev)\n    and (array_length(set_intersect(TagsArr, dynamic(['*']))) > 0 or \"'*'\" == \"'*'\")\n    and (CheckId == '''' and Sev == 0 or \"''\" == \"''\")\n| extend Category = case(\n                        array_length(set_intersect(TagsArr, dynamic([\"CPU\", \"IO\", \"Storage\"]))) > 0,\n                        '0',\n                        array_length(set_intersect(TagsArr, dynamic([\"TraceFlag\", \"Backup\", \"DBCC\", \"DBConfiguration\", \"SystemHealth\", \"Traces\", \"DBFileConfiguration\", \"Configuration\", \"Replication\", \"Agent\", \"Security\", \"DataIntegrity\", \"MaxDOP\", \"PageFile\", \"Memory\", \"Performance\", \"Statistics\"]))) > 0,\n                        '1',\n                        array_length(set_intersect(TagsArr, dynamic([\"UpdateIssues\", \"Index\", \"Naming\", \"Deprecated\", \"masterDB\", \"QueryOptimizer\", \"QueryStore\", \"Indexes\"]))) > 0,\n                        '2',\n                        '3'\n                    )\n| where (Sev >= 0 and array_length(selectedTotSev) == 0 or Sev in (selectedTotSev))\n    and (Category in (selectedCategories) or array_length(selectedCategories) == 0)\n| project\n    TargetType,\n    TargetName,\n    Severity,\n    Message,\n    Tags=strcat_array(array_slice(TagsArr, 1, -1), ', '),\n    CheckId,\n    Description,\n    HelpLink = tostring(HelpLink),\n    SeverityCode = toint(Sev)\n| order by SeverityCode desc, TargetType desc, TargetName asc\n| project-away SeverityCode\n",
                                 "host": {
                                     "connection": {
                                         "name": "@parameters('$connections')['azuremonitorlogs']['connectionId']"
@@ -560,7 +478,7 @@
                                     "resourcename": "sqlassesment-law",
                                     "resourcetype": "Log Analytics Workspace",
                                     "subscriptions": "c9a15ee2-6563-4ece-a9ef-d8a5e9f2bad6",
-                                    "timerange": "Set in query"
+                                    "timerange": "Last 24 hours"
                                 }
                             }
                         },
@@ -599,7 +517,7 @@
                 "parameters": {
                     "$connections": {
                         "value": {
-                        }
+                          }
                     }
                 }
             }
