@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "workflows_SQL_BPA_Generalized_name": {
-            "defaultValue": "SQL-BPA-Generalized",
+            "defaultValue": "OpenAI-SQL-BPA",
             "type": "String"
         },
         "connections_azuremonitorlogs_externalid": {
@@ -20,7 +20,7 @@
         {
             "type": "Microsoft.Logic/workflows",
             "apiVersion": "2017-07-01",
-            "name": "[parameters('workflows_OpenAI_SqlAssessmentResult_name')]",
+            "name": "[parameters('workflows_SQL_BPA_Generalized_name')]",
             "location": "[resourceGroup().location]",
             "identity": {
                 "type": "SystemAssigned"
