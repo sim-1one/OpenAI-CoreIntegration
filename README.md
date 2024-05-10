@@ -5,7 +5,7 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
 | Arc-SQL BPA | Logic App used to Asses with Azure OpenAI your DBs on Azure ARC Solution |
 | Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System |
 
-<h2>Arc-SQL BPS</h2>
+<h2>Arc-SQL BPA</h2>
 
  
 This template can be used for the deployment of a Logic App of SQL BPA with OpenAI report.
@@ -20,8 +20,7 @@ Microsoft VBD OpenAI-CoreIntegration is designed to offer customers customizable
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [siverza@microsoft.com](mailto:siverza@microsoft.com) with any additional questions or comments.
-contact [tommasosacco@microsoft.com](mailto:tommasosacco@microsoft.com) with any additional questions or comments.
+contact [siverza@microsoft.com](mailto:siverza@microsoft.com) - [tommasosacco@microsoft.com](mailto:tommasosacco@microsoft.com) with any additional questions or comments.
 
 ## Trademarks
 
