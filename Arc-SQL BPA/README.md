@@ -5,10 +5,8 @@
 | replacewithsubid | Connection setting during deployment | Replace with your Subscription ID |
 | replacewithRG | Connection setting during deployment | Replace with the selected RG Name for the deployment |
 | replace with tenant id | HTTP Module: Tenant ID | Replace with your Tenant ID |
-| replace with clientid | HTTP Module: Service Principal Client ID | Replace with Service Principal Client ID |
-| replace with secret | HTTP Module: Service Principal Secret ID | Replace with Service Principal Secret ID |
+
  
-N.B. 
  
 <h3> Deployment and Result </h3>
  
@@ -19,14 +17,16 @@ Change the broken module Run query and list result with a new one.
 Before: <br>
 ![Run query and list result](./images/run-query-list-result1.jpg)
 
-After:
-[Run query and list result](./images/run-query-list-result2.jpg)
-[Run query and list result](./images/run-query-list-result3.jpg)
+After: <br>
+![Run query and list result](./images/run-query-list-result2.jpg)
+![Run query and list result](./images/run-query-list-result3.jpg)
+
+
 
 
 The first "Get blob content (V2)" block must be configured with the final name of the blob (read file) that will store the Delta URL Link (in yellow). Please Use the same Blob Name for all the Blob Blocs:
  
-<img src="https://i.ibb.co/PDG15vz/containerconfig.png" alt="containerconfig" title="containerconfig">
+
  
 The Flow have different HTTP blocks required for get informations from Azure Graph. Please exand all the foreach blocks and customize the HTTP blocks as shown below. Keep in mind that the chosen solution must have permission to read Azure Graph. Ensure to have a Service Principal with all the required permission <a href=https://learn.microsoft.com/en-us/graph/api/user-get?>reported here</a>  and <a href=https://learn.microsoft.com/en-us/azure/purview/create-service-principal-azure>here</a>. For a tutorial please refer to <a href=https://techcommunity.microsoft.com/t5/azure-integration-services-blog/calling-graph-api-from-azure-logic-apps-using-delegated/ba-p/1997666>this link</a>:
  
