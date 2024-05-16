@@ -2,7 +2,7 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
 
  **Solution Name** | **Information** | **Configuration** |
 | ------------- | ------------- |
-| Arc-SQL BPA | Logic App used to Asses with Azure OpenAI your DBs on Azure ARC Solution | <a href="https://github.com/sim-1one/OpenAI-CoreIntegration/tree/main/Arc-SQL%20BPA"> Configuration Link </a> |
+| Arc-SQL BPA | Logic App used to Asses with Azure OpenAI your DBs on Azure ARC Solution | [Configuration Link](./Arc-SQL%20BPA/README.md) |
 | Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System |
 
 <h2>Arc-SQL BPA</h2>
