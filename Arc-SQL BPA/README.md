@@ -70,7 +70,8 @@ SqlAssessment_CL
     HelpLink = tostring(HelpLink),
     SeverityCode = toint(Sev)
 | order by SeverityCode desc, TargetType desc, TargetName asc
-| project-away SeverityCode```
+| project-away SeverityCode 
+```
 
 
 The first "Get blob content (V2)" block must be configured with the final name of the blob (read file) that will store the Delta URL Link (in yellow). Please Use the same Blob Name for all the Blob Blocs:
