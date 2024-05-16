@@ -16,7 +16,7 @@ After deployment completed, please follow the documentation:
 
 Change the broken module Run query and list result with a new one.
  
-Before: \n
+Before: <br>
 ![Run query and list result](./images/run-query-list-result1.jpg)
 
 After:
