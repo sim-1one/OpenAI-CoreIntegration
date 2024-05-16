@@ -17,7 +17,7 @@ After deployment completed, please follow the documentation:
 Change the broken module Run query and list result with a new one.
  
 Before: 
-[Run query and list result](./images/run-query-list-result1.jpg)
+![Run query and list result](./images/run-query-list-result1.jpg)
 
 After:
 [Run query and list result](./images/run-query-list-result2.jpg)
