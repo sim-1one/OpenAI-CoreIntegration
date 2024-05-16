@@ -21,10 +21,10 @@ After: <br>
 ![Run query and list result](./images/run-query-list-result2.jpg)
 ![Run query and list result](./images/run-query-list-result3.jpg)
 
-Compile all the information following your configuration.
+Compile all the information following your configuration.<br>
 For the query field past the code below:
 
-'''query
+```query
 let selectedCategories = dynamic([]);
 let selectedTotSev = dynamic([]);
 SqlAssessment_CL
@@ -70,7 +70,7 @@ SqlAssessment_CL
     HelpLink = tostring(HelpLink),
     SeverityCode = toint(Sev)
 | order by SeverityCode desc, TargetType desc, TargetName asc
-| project-away SeverityCode'''
+| project-away SeverityCode```
 
 
 The first "Get blob content (V2)" block must be configured with the final name of the blob (read file) that will store the Delta URL Link (in yellow). Please Use the same Blob Name for all the Blob Blocs:
