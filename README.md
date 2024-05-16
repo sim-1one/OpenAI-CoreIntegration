@@ -1,7 +1,7 @@
 Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this site is to provide sample OpenAI integration with LogicApp
 
  **Solution Name** | **Information** | **Configuration** |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- |
 | Arc-SQL BPA | Logic App used to Asses with Azure OpenAI your DBs on Azure ARC Solution | [Configuration Link](./Arc-SQL%20BPA/README.md) |
 | Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System |
 
