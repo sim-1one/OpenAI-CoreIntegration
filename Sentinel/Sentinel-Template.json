@@ -1,0 +1,395 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workflows_OpenAICheck_name": {
+            "defaultValue": "OpenAICheck",
+            "type": "String"
+        },
+        "connections_azuresentinel_externalid": {
+            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/replacewithRG/providers/Microsoft.Web/connections",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Logic/workflows",
+            "apiVersion": "2017-07-01",
+            "name": "[parameters('workflows_OpenAICheck_name')]",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "state": "Enabled",
+                "definition": {
+                    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+                    "contentVersion": "1.0.0.0",
+                    "parameters": {
+                        "$connections": {
+                            "defaultValue": {},
+                            "type": "Object"
+                        }
+                    },
+                    "triggers": {
+                        "Microsoft_Sentinel_incident": {
+                            "type": "ApiConnectionWebhook",
+                            "inputs": {
+                                "body": {
+                                    "callback_url": "@{listCallbackUrl()}"
+                                },
+                                "host": {
+                                    "connection": {
+                                        "name": "@parameters('$connections')['azuresentinel']['connectionId']"
+                                    }
+                                },
+                                "path": "/incident-creation"
+                            }
+                        }
+                    },
+                    "actions": {
+                        "For_each": {
+                            "foreach": "@body('Parse_JSON')?['choices']",
+                            "actions": {
+                                "Add_comment_to_incident_(V3)": {
+                                    "runAfter": {},
+                                    "type": "ApiConnection",
+                                    "inputs": {
+                                        "body": {
+                                            "incidentArmId": "@triggerBody()?['object']?['id']",
+                                            "message": "<p>@{items('For_each')?['message']?['content']}</p>"
+                                        },
+                                        "host": {
+                                            "connection": {
+                                                "name": "@parameters('$connections')['azuresentinel']['connectionId']"
+                                            }
+                                        },
+                                        "method": "post",
+                                        "path": "/Incidents/Comment"
+                                    }
+                                }
+                            },
+                            "runAfter": {
+                                "Parse_JSON": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Foreach"
+                        },
+                        "HTTP": {
+                            "runAfter": {
+                                "Set_Api_Key": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Http",
+                            "inputs": {
+                                "body": {
+                                    "max_tokens": 1400,
+                                    "messages": [
+                                        {
+                                            "content": "You are a Security Engineer working in SOC Team.",
+                                            "role": "user"
+                                        },
+                                        {
+                                            "content": "@variables('Question')",
+                                            "role": "user"
+                                        }
+                                    ]
+                                },
+                                "headers": {
+                                    "Content-Type": "application/json",
+                                    "api-key": "@variables('api-key')"
+                                },
+                                "method": "POST",
+                                "uri": "https://changeendpointname.openai.azure.com/openai/deployments/changemodelname/chat/completions?api-version=2023-07-01-preview"
+                            }
+                        },
+                        "Parse_JSON": {
+                            "runAfter": {
+                                "HTTP": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "ParseJson",
+                            "inputs": {
+                                "content": "@body('HTTP')",
+                                "schema": {
+                                    "properties": {
+                                        "body": {
+                                            "properties": {
+                                                "choices": {
+                                                    "items": {
+                                                        "properties": {
+                                                            "content_filter_results": {
+                                                                "properties": {
+                                                                    "hate": {
+                                                                        "properties": {
+                                                                            "filtered": {
+                                                                                "type": "boolean"
+                                                                            },
+                                                                            "severity": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    },
+                                                                    "self_harm": {
+                                                                        "properties": {
+                                                                            "filtered": {
+                                                                                "type": "boolean"
+                                                                            },
+                                                                            "severity": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    },
+                                                                    "sexual": {
+                                                                        "properties": {
+                                                                            "filtered": {
+                                                                                "type": "boolean"
+                                                                            },
+                                                                            "severity": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    },
+                                                                    "violence": {
+                                                                        "properties": {
+                                                                            "filtered": {
+                                                                                "type": "boolean"
+                                                                            },
+                                                                            "severity": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            },
+                                                            "finish_reason": {
+                                                                "type": "string"
+                                                            },
+                                                            "index": {
+                                                                "type": "integer"
+                                                            },
+                                                            "message": {
+                                                                "properties": {
+                                                                    "content": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "role": {
+                                                                        "type": "string"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "index",
+                                                            "finish_reason",
+                                                            "message",
+                                                            "content_filter_results"
+                                                        ],
+                                                        "type": "object"
+                                                    },
+                                                    "type": "array"
+                                                },
+                                                "created": {
+                                                    "type": "integer"
+                                                },
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "model": {
+                                                    "type": "string"
+                                                },
+                                                "object": {
+                                                    "type": "string"
+                                                },
+                                                "prompt_filter_results": {
+                                                    "items": {
+                                                        "properties": {
+                                                            "content_filter_results": {
+                                                                "properties": {
+                                                                    "hate": {
+                                                                        "properties": {
+                                                                            "filtered": {
+                                                                                "type": "boolean"
+                                                                            },
+                                                                            "severity": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    },
+                                                                    "self_harm": {
+                                                                        "properties": {
+                                                                            "filtered": {
+                                                                                "type": "boolean"
+                                                                            },
+                                                                            "severity": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    },
+                                                                    "sexual": {
+                                                                        "properties": {
+                                                                            "filtered": {
+                                                                                "type": "boolean"
+                                                                            },
+                                                                            "severity": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    },
+                                                                    "violence": {
+                                                                        "properties": {
+                                                                            "filtered": {
+                                                                                "type": "boolean"
+                                                                            },
+                                                                            "severity": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            },
+                                                            "prompt_index": {
+                                                                "type": "integer"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "prompt_index",
+                                                            "content_filter_results"
+                                                        ],
+                                                        "type": "object"
+                                                    },
+                                                    "type": "array"
+                                                },
+                                                "usage": {
+                                                    "properties": {
+                                                        "completion_tokens": {
+                                                            "type": "integer"
+                                                        },
+                                                        "prompt_tokens": {
+                                                            "type": "integer"
+                                                        },
+                                                        "total_tokens": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "headers": {
+                                            "properties": {
+                                                "Access-Control-Allow-Origin": {
+                                                    "type": "string"
+                                                },
+                                                "Cache-Control": {
+                                                    "type": "string"
+                                                },
+                                                "Content-Length": {
+                                                    "type": "string"
+                                                },
+                                                "Content-Type": {
+                                                    "type": "string"
+                                                },
+                                                "Date": {
+                                                    "type": "string"
+                                                },
+                                                "Strict-Transport-Security": {
+                                                    "type": "string"
+                                                },
+                                                "X-Content-Type-Options": {
+                                                    "type": "string"
+                                                },
+                                                "X-Request-ID": {
+                                                    "type": "string"
+                                                },
+                                                "apim-request-id": {
+                                                    "type": "string"
+                                                },
+                                                "azureml-model-group": {
+                                                    "type": "string"
+                                                },
+                                                "azureml-model-session": {
+                                                    "type": "string"
+                                                },
+                                                "openai-model": {
+                                                    "type": "string"
+                                                },
+                                                "openai-processing-ms": {
+                                                    "type": "string"
+                                                },
+                                                "x-accel-buffering": {
+                                                    "type": "string"
+                                                },
+                                                "x-ms-client-request-id": {
+                                                    "type": "string"
+                                                },
+                                                "x-ms-region": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "statusCode": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "Set_Api_Key": {
+                            "runAfter": {
+                                "Set_question": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "InitializeVariable",
+                            "inputs": {
+                                "variables": [
+                                    {
+                                        "name": "api-key",
+                                        "type": "string",
+                                        "value": "Replace with API KEY"
+                                    }
+                                ]
+                            }
+                        },
+                        "Set_question": {
+                            "runAfter": {},
+                            "type": "InitializeVariable",
+                            "inputs": {
+                                "variables": [
+                                    {
+                                        "name": "Question",
+                                        "type": "string",
+                                        "value": "What tasks do you recommend to investigate security incident @{triggerBody()?['object']?['properties']?['title']}.\nConsidering Incident description @{triggerBody()?['object']?['properties']?['description']} and incident entities. @{triggerBody()?['object']?['properties']?['relatedEntities']}.\nPlease describe what is the problem and how troubleshoot."
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "outputs": {}
+                },
+                "parameters": {
+                    "$connections": {
+                        "value": {
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
