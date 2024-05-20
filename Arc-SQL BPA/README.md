@@ -6,7 +6,8 @@
 | replacewithRG | Connection setting during deployment | Replace with the selected RG Name for the deployment |
 | replace with tenant id | HTTP Module: Tenant ID | Replace with your Tenant ID |
 
- 
+<h3> Important </h3>
+ This LogApp and the following changes are an example of integrating SQL BPA results with OpenAI. You can customize them to your liking such as changing the query and/or question to  ChatGPT as well as sending the results not only via email but also to Ondrive or Storage Account for example
  
 <h3> Deployment and Result </h3>
  
