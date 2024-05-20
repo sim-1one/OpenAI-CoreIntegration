@@ -88,3 +88,11 @@ Configure the severity level as a condition filter as you prefer:
 Now configure the HTTP Connector for OpenAI Connection following this configuration:
 
 ![Sentinel HTTP Connector](./images/http-connector.jpg)
+
+The last configuration is change the broken module __Send an email (V2)__ with a new one :
+
+Before
+![Sentinel Add Content](./images/sendEmail-broken.jpg)
+
+After
+![Sentinel Add Content](./images/send-email2.jpg)
