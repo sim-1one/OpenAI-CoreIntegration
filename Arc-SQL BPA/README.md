@@ -75,3 +75,9 @@ SqlAssessment_CL
 Configure the Api Key with the value inside your OpenAI Service:
 
 ![Sentinel Apy Key](./images/ApiKey.jpg)
+
+Configure ForeachSQLResult section with value of query result and each parameter in Question variable:
+
+![SQL BPA question](./images/query-value.jpg)
+![SQL BPA question](./images/value-question.jpg)
+
