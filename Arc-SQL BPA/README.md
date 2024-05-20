@@ -72,4 +72,6 @@ SqlAssessment_CL
 | project-away SeverityCode 
 ```
 
+Configure the Api Key with the value inside your OpenAI Service:
 
+![Sentinel Apy Key](./images/ApiKey.jpg)
