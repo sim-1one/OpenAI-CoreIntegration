@@ -3,27 +3,34 @@
 | **Parameters** | **Information** | **Note** |
 | ------------- | ------------- | ------------- |
 | replacewithsubid | Connection setting during deployment | Replace with your Subscription ID |
-| replacewithRG | Connection setting during deployment | Replace with the selected RG Name for the deployment |
-| replace with tenant id | HTTP Module: Tenant ID | Replace with your Tenant ID |
+| repreplacewithRG | Connection setting during deployment | Replace with the selected RG Name for the deployment |
+| Question  | Insert the Question for OpenAI  | The parameter is inside the first "Initialize Variable". Put your question in the "value" attribute |
+| api-key | The API code for manage your OpenAI service | The parameter is inside the second "Initialize Variable". Put your question in the "value" attribute  |
+| changeendpointname | Insert the OpenAI endpoint name | You can found the value inside the OpenAI resource inside Azure Cognitive Service |
+| changemodelname | Insert the model name | You can found the value inside the OpenAI resource inside Azure Cognitive Service |
 
- 
- 
-<h3> Deployment and Result </h3>
- 
-After deployment completed, please follow the documentation:
+<h3>Required Connector</h3>
 
-Change the broken module __Run query and list result__ with a new one
- 
-Before: <br>
-![Run query and list result](./images/run-query-list-result1.jpg)
+Durint the deployment please change the required value inside the connection string with the subscription id and the resource group name. After that, when the deployment is completed, please follow the documentation:
 
-After: <br>
-![Run query and list result](./images/run-query-list-result2.jpg)
-![Run query and list result](./images/run-query-list-result3.jpg)
+![Run query and list result](./images/add_content.png)
+<img src="https://i.ibb.co/WfFw1zR/sentinel-connection.png" alt="Connection" title="Connection">
 
-Compile all the information following your configuration.<br>
-For the query field past the code below:
+Configure the Question as you like. You can found a standard configuration by default:
 
+<img src="https://i.ibb.co/g6h4gQ7/question.png" alt="question" title="question">
+
+Configure the Api Key with the value inside your OpenAI Service:
+
+<img src="https://i.ibb.co/yRjjnVW/api-key.png" alt="api-key" title="api-key">
+
+Now configure the HTTP Connector for OpenAI Connection following this configuration:
+
+<img src="https://i.ibb.co/mHtbp6J/HTTP.png" alt="HTTP" title="HTTP">
+
+The last configuration is about the "Add Content to Incident (V3)". Follow the exaple below:
+
+<img src="https://i.ibb.co/2yrrfV4/comments.png" alt="comments" title="comments">
 
 
 
