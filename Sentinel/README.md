@@ -13,7 +13,7 @@
 
 Durint the deployment please change the required value inside the connection string with the subscription id and the resource group name. After that, when the deployment is completed, please follow the documentation:
 
-![Run query and list result](./images/sentinel_connection.png)
+![Sentinel Connector](./images/sentinel_connection.png ) <alt="question" title="question">
 
 Configure the Question as you like. You can found a standard configuration by default:
 
