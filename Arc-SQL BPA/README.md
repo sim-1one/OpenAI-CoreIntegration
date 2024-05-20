@@ -89,10 +89,10 @@ Now configure the HTTP Connector for OpenAI Connection following this configurat
 
 ![Sentinel HTTP Connector](./images/http-connector.jpg)
 
-The last configuration is change the broken module __Send an email (V2)__ with a new one :
+The last configuration is change the broken module __Send an email (V2)__ with a new one, add the attachment and customize the file name :
 
-Before
+Before <br>
 ![Sentinel Add Content](./images/sendEmail-broken.jpg)
 
-After
+After <br>
 ![Sentinel Add Content](./images/send-email2.jpg)
