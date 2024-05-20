@@ -19,7 +19,6 @@ Before: <br>
 
 After: <br>
 ![Run query and list result](./images/run-query-list-result2.jpg)
-![Run query and list result](./images/run-query-list-result3.jpg)
 
 Compile all the information following your configuration.<br>
 For the query field past the code below:
