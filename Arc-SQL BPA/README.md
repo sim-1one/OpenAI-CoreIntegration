@@ -84,3 +84,7 @@ Configure ForeachSQLResult section with value of query result and each parameter
 Configure the severity level as a condition filter as you prefer:
 
 ![SQL BPA question](./images/severity.jpg)
+
+Now configure the HTTP Connector for OpenAI Connection following this configuration:
+
+![Sentinel HTTP Connector](./images/http-connector.jpg)
