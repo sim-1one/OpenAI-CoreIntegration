@@ -12,7 +12,7 @@
 <h3>Required Identity</h3>
 <h4>Managed Identity</h4>
 
-When the deployment is completed go in your Logic App and create a Managed Identity following the example below and give LogAnalytic Reader permission to LAW:
+When the deployment is completed go in your Logic App and create a Managed Identity following the example below and give them __LogAnalytics Reader__ permission:
 
 ![identity](./images/identity.jpg)
 
