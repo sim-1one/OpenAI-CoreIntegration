@@ -11,6 +11,7 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
 
  All solutions have as a prerequisite the activation of the Azure OpenAI service and the configuration of the LLM model
 
+![OpenAI Prereq](./Prereq.png )
 
 <h2>Arc-SQL BPA</h2>
 
