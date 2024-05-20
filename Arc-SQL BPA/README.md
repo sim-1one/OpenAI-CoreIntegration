@@ -81,3 +81,6 @@ Configure ForeachSQLResult section with value of query result and each parameter
 ![SQL BPA question](./images/query-value.jpg)
 ![SQL BPA question](./images/value-question.jpg)
 
+Configure the severity level as a condition filter as you prefer:
+
+![SQL BPA question](./images/severity.jpg)
