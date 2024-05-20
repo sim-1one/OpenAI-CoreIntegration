@@ -13,23 +13,24 @@
 
 Durint the deployment please change the required value inside the connection string with the subscription id and the resource group name. After that, when the deployment is completed, please follow the documentation:
 
-![Sentinel Connector](./images/sentinel_connection.png ) <alt="question" title="question">
+![Sentinel Connector](./images/sentinel_connection.png )
 
 Configure the Question as you like. You can found a standard configuration by default:
 
-<img src="https://i.ibb.co/g6h4gQ7/question.png" alt="question" title="question">
+![Sentinel Question](./images/sentinel_question.png)
 
 Configure the Api Key with the value inside your OpenAI Service:
 
-<img src="https://i.ibb.co/yRjjnVW/api-key.png" alt="api-key" title="api-key">
+![Sentinel Apy Key](./images/api_key.png)
 
 Now configure the HTTP Connector for OpenAI Connection following this configuration:
 
-<img src="https://i.ibb.co/mHtbp6J/HTTP.png" alt="HTTP" title="HTTP">
+![Sentinel HTTP Connector](./images/http_connector.png)
 
 The last configuration is about the "Add Content to Incident (V3)". Follow the exaple below:
 
-<img src="https://i.ibb.co/2yrrfV4/comments.png" alt="comments" title="comments">
+![Sentinel Add Content](./images/add_content.png)
+
 
 
 
