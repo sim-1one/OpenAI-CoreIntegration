@@ -167,7 +167,7 @@
                                                     "api-key": "@variables('Api-Key')"
                                                 },
                                                 "method": "POST",
-                                                "uri": "https://aisiverzalab-we-001.openai.azure.com/openai/deployments/gpt35/chat/completions?api-version=2023-07-01-preview"
+                                                "uri": "https://changeendpointname.openai.azure.com/openai/deployments/changemodelname/chat/completions?api-version=2023-07-01-preview"
                                             }
                                         },
                                         "Parse_JSON": {
@@ -384,7 +384,7 @@
                                     "type": "SetVariable",
                                     "inputs": {
                                         "name": "Question",
-                                        "value": "Please consider this output:\"@{items('For_eachSQLResult')?['Message']}\" and \"@{items('For_eachSQLResult')?['Description']}\".\nThis is the effected resource:\"@{items('For_eachSQLResult')?['TargetName']}\".\nPlease describe steps to fix issue. Considering only link content @{items('For_eachSQLResult')?['HelpLink']}\n"
+                                        "value": "Please consider this output:\"@{items('For_eachSQLResult')?['Message']}\" and \"@{items('For_eachSQLResult')?['Description']}\".\nThis is the effected resource:\"@{items('For_eachSQLResult')?['TargetName']}\".\nPlease describe steps to fix issue. \n"
                                     }
                                 }
                             },
