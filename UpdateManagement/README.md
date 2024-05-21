@@ -2,8 +2,6 @@
  
 | **Parameters** | **Information** | **Note** |
 | ------------- | ------------- | ------------- |
-| **Parameters** | **Information** | **Note** |
-| ------------- | ------------- | ------------- |
 | replacewithsubid | Connection setting during deployment | Replace with your Subscription ID |
 | repreplacewithRG | Connection setting during deployment | Replace with the selected RG Name for the deployment |
 | api-key | The API code for manage your OpenAI service | The parameter is inside the second "Initialize Variable". Put your question in the "value" attribute  |
