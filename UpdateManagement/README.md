@@ -14,17 +14,11 @@
  This LogApp and the following changes are an example of integrating UpdateManager results with OpenAI, creating a report send via Email with OpenAI comment of pending Security Update of your environment. 
  
  
-<h3>Deploy</h3>
-
-When you deploy, replace with your SubscriptionID and ResourceGroup Name:
-
-![iDeploy](./images/deploy.jpg)
-
-
 <h3>Required Identity</h3>
 <h4>Managed Identity</h4>
 
-When the deployment is completed go in your Logic App and create a Managed Identity following the example below and give them  permission:
+Now configure the HTTP request to the Graph Explorer enabling the authentication via System Assigned Managed Identity. Please remind that the Managed Identity need to have the righ permission on the subscription for read the resources:
+
 
 ![identity](./images/identity.jpg)
 
@@ -41,13 +35,11 @@ As first step please configure the required recurrence:
 
 Configure the Api Key with the value inside your OpenAI Service:
 
-![Sentinel Apy Key](./images/ApiKey.jpg)
+![Api Key](./images/ApiKey.jpg)
 
-Configure __ForeachSQLResult__ section with value of query result and each parameter in Question variable:
+At this point we need to configure the Ask to OpenAI module replacing the required parameters:
 
-![SQL BPA question](./images/query-value.jpg)
-![SQL BPA question](./images/value-question.jpg)
-
+![OpenAI](./images/OpenAI.jpg)
 
 Now configure the HTTP Connector for OpenAI Connection following this configuration:
 
