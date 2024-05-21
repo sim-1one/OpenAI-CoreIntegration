@@ -1,4 +1,4 @@
-<h3>Azure SQL BPA OpenAI integration: Configuration</h3>
+<h3>Azure UpdateManager OpenAI integration: Configuration</h3>
  
 | **Parameters** | **Information** | **Note** |
 | ------------- | ------------- | ------------- |
@@ -7,9 +7,8 @@
 | replace with tenant id | HTTP Module: Tenant ID | Replace with your Tenant ID |
 
 <h3> Important </h3>
- This LogApp and the following changes are an example of integrating SQL BPA results with OpenAI, creating an HTML report send via Email with OpenAI comment of Severity High result. 
- You can customize them to your liking such as changing the query and/or question to  ChatGPT as well as sending the results not only via email but also to Ondrive or Storage Account for example
- Before using you must have enabled and performed SQL Best Practices Assessment.
+ This LogApp and the following changes are an example of integrating UpdateManager results with OpenAI, creating a report send via Email with OpenAI comment of pending Security Update of your environment. 
+ 
  
 <h3>Deploy</h3>
 
