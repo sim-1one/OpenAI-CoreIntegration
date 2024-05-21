@@ -41,16 +41,6 @@ At this point we need to configure the Ask to OpenAI module replacing the requir
 
 ![OpenAI](./images/OpenAI.jpg)
 
-Now configure the HTTP Connector for OpenAI Connection following this configuration:
+In the example below we have a "Send Email V2" connector for send the final report to the required people or to a Teams channel . If you want to follow the same approach configure the module following the same example adding them at the end of the Logic App. Make sure to use the correct variable in the body of the email in order to have them correctly formatted:
 
-![Sentinel HTTP Connector](./images/http-connector.jpg)
-
-The last configuration is change the broken module __Send an email (V2)__ with a new one, add the attachment and customize the file name :
-
-Before <br>
-![Sentinel Add Content](./images/sendEmail-broken.jpg)
-
-After <br>
-![Sentinel Add Content](./images/send-email2.jpg)
-
-Now save your LogicApp and __Enable__
+![example](./images/example-notification.jpg)
