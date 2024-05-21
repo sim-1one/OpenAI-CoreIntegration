@@ -13,7 +13,7 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
 
 ![OpenAI Prereq](./Prereq.png )
 
-<h2>Arc-SQL BPA</h2>
+<h2>Arc-SQL BestPracticesAssessment</h2>
 
  
 This template can be used for the deployment of a Logic App of SQL BPA with OpenAI report.
