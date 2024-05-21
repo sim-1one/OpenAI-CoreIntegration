@@ -36,7 +36,7 @@ This template can be used for the deployment of a Logic App in order to be trigg
 
 This template can be used for the deployment of a Logic App to send UpdateManager report with OpenAI Comment of Pending security fix.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FSentinel%2FSentinel-Template.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FUpdateManagement%2FUpdateManagement.json" target="_blank">
 <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
