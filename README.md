@@ -13,7 +13,7 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
 
 ![OpenAI Prereq](./Prereq.png )
 
-<h2>Arc-SQL BestPracticesAssessment</h2>
+<h2>Arc-SQL BestPracticesAssessment OpenAI integration</h2>
 
  
 This template can be used for the deployment of a Logic App of SQL BPA with OpenAI report.
@@ -31,7 +31,7 @@ This template can be used for the deployment of a Logic App in order to be trigg
 <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
-<h2>SAzure UpdateManager OpenAI integration</h2>
+<h2>Azure UpdateManager OpenAI integration</h2>
 
 
 This template can be used for the deployment of a Logic App to send UpdateManager report with OpenAI Comment of Pending security fix.
