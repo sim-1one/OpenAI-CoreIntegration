@@ -24,7 +24,7 @@ When you deploy, replace with your SubscriptionID and ResourceGroup Name:
 <h3>Required Identity</h3>
 <h4>Managed Identity</h4>
 
-When the deployment is completed go in your Logic App and create a Managed Identity following the example below and give them __LogAnalytics Reader__ permission:
+When the deployment is completed go in your Logic App and create a Managed Identity following the example below and give them  permission:
 
 ![identity](./images/identity.jpg)
 
@@ -34,7 +34,7 @@ When the deployment is completed go in your Logic App and create a Managed Ident
 After deployment completed, please follow the documentation:
 
 
-Change __Recurrence__ section after SQL BPA has been performed:
+As first step please configure the required recurrence:
 
 ![recurrence](./images/recurrence.jpg)
 
@@ -48,9 +48,6 @@ Configure __ForeachSQLResult__ section with value of query result and each param
 ![SQL BPA question](./images/query-value.jpg)
 ![SQL BPA question](./images/value-question.jpg)
 
-Configure the severity level as a condition filter as you prefer:
-
-![SQL BPA question](./images/severity.jpg)
 
 Now configure the HTTP Connector for OpenAI Connection following this configuration:
 
