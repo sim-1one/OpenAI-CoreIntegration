@@ -7,7 +7,9 @@
 | replace with tenant id | HTTP Module: Tenant ID | Replace with your Tenant ID |
 
 <h3> Important </h3>
- This LogApp and the following changes are an example of integrating SQL BPA results with OpenAI. You can customize them to your liking such as changing the query and/or question to  ChatGPT as well as sending the results not only via email but also to Ondrive or Storage Account for example
+ This LogApp and the following changes are an example of integrating SQL BPA results with OpenAI, creating an HTML report send via Email with OpenAI comment of Severity High result. 
+ You can customize them to your liking such as changing the query and/or question to  ChatGPT as well as sending the results not only via email but also to Ondrive or Storage Account for example
+ Before using you must have enabled and performed SQL Best Practices Assessment.
  
 <h3>Deploy</h3>
 
@@ -27,6 +29,11 @@ When the deployment is completed go in your Logic App and create a Managed Ident
 <h3> Deployment and Result </h3>
  
 After deployment completed, please follow the documentation:
+
+
+Change __Recurrence__ section after SQL BPA has been performed:
+
+![recurrence](./images/recurrence.jpg)
 
 Change the broken module __Run query and list result__ with a new one
  
@@ -92,7 +99,7 @@ Configure the Api Key with the value inside your OpenAI Service:
 
 ![Sentinel Apy Key](./images/ApiKey.jpg)
 
-Configure ForeachSQLResult section with value of query result and each parameter in Question variable:
+Configure __ForeachSQLResult__ section with value of query result and each parameter in Question variable:
 
 ![SQL BPA question](./images/query-value.jpg)
 ![SQL BPA question](./images/value-question.jpg)
