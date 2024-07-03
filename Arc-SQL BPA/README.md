@@ -51,7 +51,7 @@ let selectedCategories = dynamic([]);
 let selectedTotSev = dynamic([]);
 SqlAssessment_CL
 | extend asmt = parse_csv(RawData)
-| where asmt[11] =~ "MSSQLSERVER" 
+//| where asmt[11] =~ "MSSQLSERVER" 
 | extend
     AsmtId=tostring(asmt[1]),
     CheckId=tostring(asmt[2]),
