@@ -5,6 +5,9 @@
 | replacewithsubid | Connection setting during deployment | Replace with your Subscription ID |
 | replacewithRG | Connection setting during deployment | Replace with the selected RG Name for the deployment |
 | replace with tenant id | HTTP Module: Tenant ID | Replace with your Tenant ID |
+| OpenAI API Key | String Resource to connect to OpenAI | Replace with your Azure OpenAI Key |
+| BingSearc API Key | String Resource to connect to BingSearch | Replace with your Azure BingSearch |
+
 
 <h3> Important </h3>
  This LogApp and the following changes are an example of integrating SQL BPA results with OpenAI, creating an HTML report send via Email with OpenAI comment of Severity High result. 
