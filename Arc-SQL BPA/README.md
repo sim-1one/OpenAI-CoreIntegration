@@ -104,6 +104,16 @@ Configure __ForeachSQLResult__ section with value of query result and each param
 ![SQL BPA question](./images/query-value.jpg)
 ![SQL BPA question](./images/value-question.jpg)
 
+Create and configure BingSearch resource (NOT BingSearch Custom):
+![SQL BPA Bing](./images/BingSearch_Creation.jpg)
+
+Get Bink API Key:
+![SQL BPA Bing](./images/BingKey.jpg)
+
+Set BingSearch API Key in the connector:
+![SQL BPA Bing](./images/BingSearch.jpg)
+![SQL BPA Bing](./images/BingSearch_Conf.jpg)
+
 Configure the severity level as a condition filter as you prefer:
 
 ![SQL BPA question](./images/severity.jpg)
