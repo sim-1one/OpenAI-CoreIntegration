@@ -10,9 +10,9 @@
 
 
 <h3> Important </h3>
- This LogApp and the following changes are an example of integrating SQL BPA results with OpenAI, creating an HTML report send via Email with OpenAI comment of Severity High result. 
- You can customize them to your liking such as changing the query and/or question to  ChatGPT as well as sending the results not only via email but also to Ondrive or Storage Account for example
- Before using you must have enabled and performed SQL Best Practices Assessment.
+ This LogApp and the following changes are an example of integrating SQL BPA results with OpenAI, creating an HTML report and CSV file send via Email with OpenAI comment of Severity High and or Medium results. 
+ You can customize them to your liking such as changing the query and/or question to  ChatGPT as well as sending the results not only via email but also to Ondrive or Storage Account for example.
+ Before using it you must have enabled and performed SQL Best Practices Assessment on your [hybrid Machine](https://learn.microsoft.com/en-us/sql/sql-server/azure-arc/assess?view=sql-server-ver16&tabs=portal): 
  
 <h3>Deploy</h3>
 
@@ -28,6 +28,11 @@ When the deployment is completed go in your Logic App and create a Managed Ident
 
 ![identity](./images/identity.jpg)
 
+<h3>Logic App Workflow Setting</h3>
+<h4>High throughput </h4>
+
+Set High throughput to ON:
+![identity](./images/HighThroughput.jpg)
 
 <h3> Deployment and Result </h3>
  
