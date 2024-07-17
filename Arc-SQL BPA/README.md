@@ -113,7 +113,7 @@ Configure the Api Key with the value inside your OpenAI Service:
 
 ![Sentinel Apy Key](./images/ApiKey.jpg)
 
-Configure __ForeachSQLResult__ section with value of query result and each parameter in Question variable:
+Configure __ForeachSQLResult__ section with value of query result and each parameter in Question variable as you like:
 
 ![SQL BPA question](./images/query-value.jpg)
 ![SQL BPA question](./images/value-question.jpg)
