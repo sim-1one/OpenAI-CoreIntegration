@@ -20,7 +20,7 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
  
 This template can be used for the deployment of a Logic App of SQL BPA with OpenAI report.
  
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FArc-SQL%2520BPA%2FSQLBPA-Template.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FArc-SQL%2520BPA%2FSQLBPA-V2.json" target="_blank">
 <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
