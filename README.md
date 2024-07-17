@@ -11,7 +11,7 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
 <h2>Prerequisites</h2>
  
 
- Enable Azure OpenAI service and configure LLM model
+ Enable Azure OpenAI service and configure LLM model. Please be aware that some solutions may require some specific Azure OpenAI model.
 
 ![OpenAI Prereq](./Prereq.png )
 

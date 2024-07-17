@@ -1,7 +1,8 @@
 <h3>Azure SQL BPA OpenAI integration: Configuration</h3>
  
-| **Parameters** | **Information** | **Note** |
+| **Parameters/Requirements** | **Information** | **Note** |
 | ------------- | ------------- | ------------- |
+| Azure OpenAI Model | This solution require specific Azure OpenAI Model | Version gpt-4-1106-preview  |
 | replacewithsubid | Connection setting during deployment | Replace with your Subscription ID |
 | replacewithRG | Connection setting during deployment | Replace with the selected RG Name for the deployment |
 | replace with tenant id | HTTP Module: Tenant ID | Replace with your Tenant ID |
