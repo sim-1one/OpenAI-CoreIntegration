@@ -125,7 +125,6 @@ Get Bink API Key:
 ![SQL BPA Bing](./images/BingKey.jpg)
 
 Set BingSearch API Key in the connector:
-![SQL BPA Bing](./images/BingSearch.jpg)
 ![SQL BPA Bing](./images/BingSearch_Conf.jpg)
 
 Configure the severity level as a condition filter as you prefer:
