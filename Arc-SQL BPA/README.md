@@ -15,6 +15,7 @@
  You can customize them to your liking such as changing the query and/or question to  ChatGPT as well as sending the results not only via email but also to Ondrive or Storage Account for example.
  Before using it you must have enabled and performed SQL Best Practices Assessment on your hybrid Machine.
 
+
  Reference:
  [Azure ARC SQL Assessment](https://learn.microsoft.com/en-us/sql/sql-server/azure-arc/assess?view=sql-server-ver16&tabs=portal)
 
