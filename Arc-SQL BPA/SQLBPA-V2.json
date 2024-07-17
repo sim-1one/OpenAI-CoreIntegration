@@ -412,13 +412,13 @@
                                             {
                                                 "equals": [
                                                     "@item()?['Severity']",
-                                                    "Medium"
+                                                    "High"
                                                 ]
                                             },
                                             {
                                                 "equals": [
-                                                    "",
-                                                    ""
+                                                    "@item()?['Severity']",
+                                                    "Medium"
                                                 ]
                                             }
                                         ]
