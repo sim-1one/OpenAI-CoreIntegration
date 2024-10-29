@@ -27,7 +27,14 @@
  Reference:
  [Azure Enterprise Scale Reference](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-architecture)
 
-<h3>Deploy</h3>
+<h2>Deploy</h2>
+
+<a href="https://github.com/DevOpsStyle/OpenAI-CoreIntegration/blob/V0.2/OpenAI-CoreIntegrationLZ/README.md#openai-coreintegrationlz" target="_blank">Configuration</a>
+
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FDevOpsStyle%2FOpenAI-CoreIntegration%2Frefs%2Fheads%2FV0.2%2FOpenAI-CoreIntegrationLZ%2FAIServicesForInfraELZ.json" target="_blank">
+  <img src="https://aka.ms/deploytoazurebutton"/>
+</a>
 
 When you deploy, replace all the parameters with the required information
 
@@ -37,7 +44,7 @@ If the information provided are correct, the deployment will proceed
 
 ![Deployment Progress](./images/start_deployment.jpeg)
 
-<h3>Post Deployment</h3>
+<h2>Post Deployment</h2>
 
 When the deployment is completed, to view all the resources go to Azure Portal > Subscription > Select the subscription used during the deployment > Resources
 
@@ -45,7 +52,7 @@ or click on the "Go to subscription" button:
 
 ![Deployment Progress](./images/deployment_complete.jpeg)
 
-<h3>Solution Configuration<h3>
+<h2>Solution Configuration<h2>
 
 Each solution created in the initiative have a dedicated configuration flow:
 
