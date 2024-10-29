@@ -27,6 +27,10 @@
  Reference:
  [Azure Enterprise Scale Reference](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-architecture)
 
+ <h3> Architectural Overview <h3>
+
+ ![OpenAI-CoreIntegration LZ](./images/OpenAI-CoreIntegration_page-0001.jpg)
+
 <h2>Deploy</h2>
 
 <a href="https://github.com/DevOpsStyle/OpenAI-CoreIntegration/blob/V0.2/OpenAI-CoreIntegrationLZ/README.md#openai-coreintegrationlz" target="_blank">Configuration</a>
