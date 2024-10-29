@@ -27,7 +27,7 @@
  Reference:
  [Azure Enterprise Scale Reference](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-architecture)
 
- <h3> Architectural Overview <h3>
+ <h3> Architectural Overview </h3>
 
  ![OpenAI-CoreIntegration LZ](./images/OpenAI-CoreIntegration_page-0001.jpg)
 
@@ -56,7 +56,7 @@ or click on the "Go to subscription" button:
 
 ![Deployment Progress](./images/deployment_complete.jpeg)
 
-<h2>Solution Configuration<h2>
+<h2>Solution Configuration</h2>
 
 Each solution created in the initiative have a dedicated configuration flow:
 
