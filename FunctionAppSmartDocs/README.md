@@ -56,7 +56,7 @@ $response
 ```
 
 
-[!Azure Execution](../FunctionAppSmartDocs/images/immagine.png)
+![Azure Execution](../FunctionAppSmartDocs/images/immagine.png)
 
 > [!NOTE]
 > When planning to use this function for high workloads configure a Premium App Service Plan or higher to avoid time limitations.
