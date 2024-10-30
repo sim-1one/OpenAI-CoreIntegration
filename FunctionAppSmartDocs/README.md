@@ -26,10 +26,10 @@ The SmartDocs Azure Function is designed to generate technical documentation and
 
 <h3>Example files for Function deployment</h3>
 
-[host.json](host.json)
-[local.settings.json](./local.settings.json)
-[requirements.txt](./requirements.txt)
-[function_app.py](./function_app.py)
+- [host.json](host.json)
+- [local.settings.json](./local.settings.json)
+- [requirements.txt](./requirements.txt)
+- [function_app.py](./function_app.py)
 
 <h3>PowerShell Script for Invocation</h3>
 Here is a PowerShell script to invoke the function using an HTTP POST request:
