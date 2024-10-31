@@ -138,7 +138,7 @@
         "properties": {
           "mode": "Incremental",
           "templateLink": {
-            "uri": "https://raw.githubusercontent.com/DevOpsStyle/OpenAI-CoreIntegration/refs/heads/V0.2/OpenAI-CoreIntegrationLZ/templateOpenAI.json",
+            "uri": "https://raw.githubusercontent.com/sim-1one/OpenAI-CoreIntegration/refs/heads/main/OpenAI-CoreIntegrationLZ/templateOpenAI.json",
             "contentVersion": "1.0.0.0"
           },
           "parameters": {
@@ -196,7 +196,7 @@
         "properties": {
           "mode": "Incremental",
           "templateLink": {
-            "uri": "https://raw.githubusercontent.com/DevOpsStyle/OpenAI-CoreIntegration/refs/heads/V0.2/OpenAI-CoreIntegrationLZ/templateBingSearch.json",
+            "uri": "https://raw.githubusercontent.com/sim-1one/OpenAI-CoreIntegration/refs/heads/main/OpenAI-CoreIntegrationLZ/templateBingSearch.json",
             "contentVersion": "1.0.0.0"
           },
           "parameters": {
@@ -233,7 +233,7 @@
         "properties": {
           "mode": "Incremental",
           "templateLink": {
-            "uri": "https://raw.githubusercontent.com/DevOpsStyle/OpenAI-CoreIntegration/refs/heads/V0.2/OpenAI-CoreIntegrationLZ/SQLBPAV2.json",
+            "uri": "https://rraw.githubusercontent.com/sim-1one/OpenAI-CoreIntegration/refs/heads/main/OpenAI-CoreIntegrationLZ/SQLBPAV2.json",
             "contentVersion": "1.0.0.0"
           },
           "parameters": {
@@ -263,7 +263,7 @@
         "properties": {
           "mode": "Incremental",
           "templateLink": {
-            "uri": "https://raw.githubusercontent.com/DevOpsStyle/OpenAI-CoreIntegration/refs/heads/V0.2/OpenAI-CoreIntegrationLZ/CostMonthlyCheck.json",
+            "uri": "https://raw.githubusercontent.com/sim-1one/OpenAI-CoreIntegration/refs/heads/main/OpenAI-CoreIntegrationLZ/CostMonthlyCheck.json",
             "contentVersion": "1.0.0.0"
           },
           "parameters": {
@@ -287,7 +287,7 @@
         "properties": {
           "mode": "Incremental",
           "templateLink": {
-            "uri": "https://raw.githubusercontent.com/DevOpsStyle/OpenAI-CoreIntegration/refs/heads/V0.2/OpenAI-CoreIntegrationLZ/UpdateManagement.json",
+            "uri": "https://raw.githubusercontent.com/sim-1one/OpenAI-CoreIntegration/refs/heads/main/OpenAI-CoreIntegrationLZ/UpdateManagement.json",
             "contentVersion": "1.0.0.0"
           },
           "parameters": {
@@ -318,7 +318,7 @@
         "properties": {
           "mode": "Incremental",
           "templateLink": {
-            "uri": "https://raw.githubusercontent.com/DevOpsStyle/OpenAI-CoreIntegration/refs/heads/V0.2/OpenAI-CoreIntegrationLZ/CreateFunction.json",
+            "uri": "https://raw.githubusercontent.com/sim-1one/OpenAI-CoreIntegration/refs/heads/main/OpenAI-CoreIntegrationLZ/CostMonthlyCheck.json",
             "contentVersion": "1.0.0.0"
           },
           "parameters": {
