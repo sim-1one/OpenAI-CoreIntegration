@@ -6,6 +6,7 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
 | Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System | [Configuration Link](./Sentinel/README.md) |
 | UpdateManager Integration | Logic App used to Integrate Azure UM with OpenAI comment | [Configuration Link](./UpdateManagement/README.md) |
 | CostMonthlyCheck Integration | Logic App used to Monitor Cost Monthly with OpenAI comment | [Configuration Link](./CostMonthlyCheck/README.md) |
+| OpenAI-CoreIntegrationLZ | Foundation - ARM template for OpenAI-CoreIntegration Landing Zone | [Configuration Link](./OpenAI-CoreIntegrationLZ/README.md) |
 
 
 <h2>Prerequisites</h2>
