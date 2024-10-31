@@ -135,6 +135,10 @@ Now configure the HTTP Connector for OpenAI Connection following this configurat
 
 ![Sentinel HTTP Connector](./images/http-connector.jpg)
 
+At this point, be sure that the ComposeCSV block is correctly configured. When the "Run query and list result" block is recreated some link can be resetted. Follow the ComposeCSV attribute configuration following the example below (if the new UI model is not useful for the customization, evaluate to switch in "code view" mode):
+
+![ComposeCSV](./images/composeCSV.jpeg)
+
 The last configuration is change the broken module __Send an email (V2)__ with a new one, add the attachment and customize the file name :
 
 Before <br>
