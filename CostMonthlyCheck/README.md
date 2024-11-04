@@ -28,7 +28,7 @@ After deployment completed, please follow the documentation:
 
 As first step please configure the required recurrence:
 
-![recurrence](./images/recurrence.jpg)
+![recurrence](./images/Recurrence.jpg)
 
 
 Configure the Api Key with the value inside your OpenAI Service:
