@@ -3,10 +3,10 @@ Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this si
  **Solution Name** | **Information** | **Configuration** |
 | ------------- | ------------- | ------------- |
 | Arc-SQL BPA | Logic App used to Asses with Azure OpenAI your DBs on Azure ARC Solution | [Configuration Link](./Arc-SQL%20BPA/README.md) |
-| Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System | [Configuration Link](./Sentinel/README.md) |
 | UpdateManager Integration | Logic App used to Integrate Azure UM with OpenAI comment | [Configuration Link](./UpdateManagement/README.md) |
 | CostMonthlyCheck Integration | Logic App used to Monitor Cost Monthly with OpenAI comment | [Configuration Link](./CostMonthlyCheck/README.md) |
 | OpenAI-CoreIntegrationLZ | Foundation - ARM template for OpenAI-CoreIntegration Landing Zone | [Configuration Link](./OpenAI-CoreIntegrationLZ/README.md) |
+| Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System | [Configuration Link](./Sentinel/README.md) |
 
 
 <h2>Prerequisites</h2>
@@ -25,14 +25,6 @@ This template can be used for the deployment of a Logic App of SQL BPA with Open
 <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
-<h2>Sentinel OpenAI integration</h2>
-
-
-This template can be used for the deployment of a Logic App in order to be triggered by Sentinel during the creation of an incident.
-
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FSentinel%2FSentinel-Template.json" target="_blank">
-<img src="https://aka.ms/deploytoazurebutton"/>
-</a>
 
 <h2>Azure UpdateManager OpenAI integration</h2>
 
@@ -48,6 +40,15 @@ This template can be used for the deployment of a Logic App to send UpdateManage
 This template can be used for the deployment of a Logic App to send Monthly Cost Monitor report with OpenAI Comment.
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FCostMonthlyCheck%2FCostMonthlyCheck.json" target="_blank">
+<img src="https://aka.ms/deploytoazurebutton"/>
+</a>
+
+<h2>Sentinel OpenAI integration</h2>
+
+
+This template can be used for the deployment of a Logic App in order to be triggered by Sentinel during the creation of an incident.
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FSentinel%2FSentinel-Template.json" target="_blank">
 <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
