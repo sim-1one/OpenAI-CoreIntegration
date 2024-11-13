@@ -1,4 +1,4 @@
-Welcome to the **Microsoft OpenAI-CoreIntegration** repo! The purpose of this site is to provide sample OpenAI integration with LogicApp
+Welcome to the **Microsoft Azure AI for Operation Framework** repo! The purpose of this site is to provide sample OpenAI integration with LogicApp
 
  **Solution Name** | **Information** | **Configuration** |
 | ------------- | ------------- | ------------- |
@@ -54,7 +54,7 @@ This template can be used for the deployment of a Logic App in order to be trigg
 
 ## Contributing
 
-Microsoft VBD OpenAI-CoreIntegration is designed to offer customers customizable solutions that leverage the power of Microsoft's Logic Apps and the advanced AI capabilities of OpenAI. This versatile Business Development Framework enables seamless integration with a variety of Microsoft services, including Azure ARC and Sentinel, enhancing security, scalability, and operational efficiency. Through this platform, users can create robust, intelligent applications capable of dynamically responding to evolving business and security needs.
+Microsoft VBD Azure AI for Operation Framework is designed to offer customers customizable solutions that leverage the power of Microsoft's Logic Apps and the advanced AI capabilities of OpenAI. This versatile Business Development Framework enables seamless integration with a variety of Microsoft services, including Azure ARC and Sentinel, enhancing security, scalability, and operational efficiency. Through this platform, users can create robust, intelligent applications capable of dynamically responding to evolving business and security needs.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
