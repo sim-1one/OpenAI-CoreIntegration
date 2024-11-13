@@ -57,7 +57,7 @@ Microsoft VBD OpenAI-CoreIntegration is designed to offer customers customizable
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [siverza@microsoft.com](mailto:siverza@microsoft.com) - [tommasosacco@microsoft.com](mailto:tommasosacco@microsoft.com) with any additional questions or comments.
+contact [siverza@microsoft.com](mailto:siverza@microsoft.com) - [tommasosacco@microsoft.com](mailto:tommasosacco@microsoft.com) - [saverio.lorenzini@microsoft.com](mailto:saverio.lorenzini@microsoft.com) - [gianluca.derossi@microsoft.com](mailto:gianluca.derossi@microsoft.com)with any additional questions or comments.
 
 ## Trademarks
 
