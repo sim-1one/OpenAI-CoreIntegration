@@ -1,4 +1,4 @@
-<h3>AI for Operation Framwork LZ</h3>
+<h3>AI for Operation Framework LZ</h3>
  
 | **Parameters/Requirements** | **Information** | **Note** |
 | ------------- | ------------- | ------------- |
