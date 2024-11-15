@@ -12,10 +12,10 @@
 | Open AI Name | Insert the name for the Open AI Deployed resource | Replace with the name |
 | Bing Name | Insert the name for the Bing Deployed resource | Replace with the name |
 | Sku Bing | Insert the required sku for the Bing Deployed resource | Replace with the chosed sku |
-| Workflows_SQL_BPA_AI_name | Insert the name for the SQL BPA Logic App Deployed | Replace with the required name |
-| Workflows_Open AI Cost Mngmt Monthly Check_name | Insert the name for the Cost Mgmt Logic App Deployed | Replace with the required name |
-| Workflows_Open AI SmartUpdate | Insert the name for the SmartUpdate Logic App Deployed | Replace with the required name |
-| Workflows_Open AI AnomaliesDetection | Insert the name for the AnomaliesDetection Logic App Deployed | Replace with the required name |
+| LogicApp_SQL_BPA_AI_name | Insert the name for the SQL BPA Logic App Deployed | Replace with the required name |
+| LogicApp_Open AI Cost Monthly Check_name | Insert the name for the Cost Mgmt Logic App Deployed | Replace with the required name |
+| LogicApp_Open AI SmartUpdate | Insert the name for the SmartUpdate Logic App Deployed | Replace with the required name |
+| LogicApp_Open AI AnomaliesDetection | Insert the name for the AnomaliesDetection Logic App Deployed | Replace with the required name |
 | Function RG | Insert the name for the Function App Resource Group | Replace with the required name |
 | Function RG Location | Insert the location for the RG where the Function will be placed | Replace with the location |
 | Function Name | Insert the name Function App Deployed | Replace with the required name |
