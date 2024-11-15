@@ -7,7 +7,7 @@
             "type": "String"
         },
         "connections_azuremonitorlogs_1_externalid": {
-            "defaultValue": "/subscriptions/replacewithsubid/resourceGroups/replacewithRG/providers/Microsoft.Web/connections/azuremonitorlogs-1",
+            "defaultValue": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/connections/office365')]",
             "type": "String"
         }
     },
@@ -17,7 +17,7 @@
             "type": "Microsoft.Logic/workflows",
             "apiVersion": "2017-07-01",
             "name": "[parameters('workflows_OpenAIAnomalyDetectionAD_gen_name')]",
-            "location": "westeurope",
+            "location": "[resourceGroup().location]",
             "identity": {
                 "type": "SystemAssigned"
             },
