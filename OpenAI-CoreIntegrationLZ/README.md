@@ -36,7 +36,7 @@
 <a href="https://github.com/DevOpsStyle/OpenAI-CoreIntegration/blob/V0.2/OpenAI-CoreIntegrationLZ/README.md#openai-coreintegrationlz" target="_blank">Configuration</a>
 
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FDevOpsStyle%2FOpenAI-CoreIntegration%2Frefs%2Fheads%2FV0.2%2FOpenAI-CoreIntegrationLZ%2FAIServicesForInfraELZ.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Frefs%2Fheads%2Fmain%2FOpenAI-CoreIntegrationLZ%2FAIServicesForInfraELZ.json" target="_blank">
   <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
@@ -63,6 +63,7 @@ Each solution created in the initiative have a dedicated configuration flow:
 - [SQL BPA Enhanced Assessment Logic App](../Arc-SQL%20BPA/README.md)
 - [Cost Monthly Check Logic App](../CostMonthlyCheck/README.md)
 - [Update Management Logic App](../UpdateManagement/README.md)
+- [UAnomalies Detection Logic App](../AnomaliesDetection/README.md)
 - [Function App](../FunctionAppSmartDocs/README.md): An empty box ready to be used for deploy custom Script\Application integrated with OpenAI. (Some example will be provided during the engagement. An App Developer skilled on Azure Function Customization and Deployment is needed).
 
 Please reach your CSA for be followed during the configuration.

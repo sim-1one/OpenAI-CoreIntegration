@@ -9,6 +9,10 @@
         "connections_azuremonitorlogs_1_externalid": {
             "defaultValue": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/connections/office365')]",
             "type": "String"
+        },
+        "location": {
+            "defaultValue": "westeurope",
+            "type": "String"
         }
     },
     "variables": {},

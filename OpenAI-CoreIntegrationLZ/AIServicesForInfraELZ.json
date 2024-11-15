@@ -86,6 +86,13 @@
           "description": "Logic App Name for Update-Management."
         }
       },
+      "workflows_AnomaliesDetection_name": {
+        "defaultValue": "OpenAI-AnomaliesDetection",
+        "type": "string",
+        "metadata": {
+          "description": "Logic App Name for Anomalies Detection."
+        }
+      },
       "FunctionRG": {
         "defaultValue": "FunctionRGAI",
         "type": "string",
@@ -304,6 +311,30 @@
         ]
       },
       {
+        "type": "Microsoft.Resources/deployments",
+        "apiVersion": "2019-10-01",
+        "name": "DeployAnomaliesDetection",
+        "resourceGroup": "[parameters('LogicAppsRG')]",
+        "properties": {
+          "mode": "Incremental",
+          "templateLink": {
+            "uri": "https://raw.githubusercontent.com/sim-1one/OpenAI-CoreIntegration/refs/heads/main/OpenAI-CoreIntegrationLZ/AnomaliesDetection.json",
+            "contentVersion": "1.0.0.0"
+          },
+          "parameters": {
+            "workflows_OpenAIAnomalyDetectionAD_gen_name": {
+              "value": "[parameters('workflows_AnomaliesDetection_name')]"
+            },
+            "location": {
+              "value": "[parameters('logicAppsLocation')]"
+            }
+          }
+        },
+        "dependsOn": [
+          "[resourceId('Microsoft.Resources/resourceGroups', parameters('LogicAppsRG'))]"
+        ]
+      },
+      {
         "type": "Microsoft.Resources/resourceGroups",
         "apiVersion": "2022-09-01",
         "name": "[parameters('FunctionRG')]",
@@ -318,7 +349,7 @@
         "properties": {
           "mode": "Incremental",
           "templateLink": {
-            "uri": "https://raw.githubusercontent.com/sim-1one/OpenAI-CoreIntegration/refs/heads/main/OpenAI-CoreIntegrationLZ/CostMonthlyCheck.json",
+            "uri": "https://raw.githubusercontent.com/sim-1one/OpenAI-CoreIntegration/refs/heads/main/OpenAI-CoreIntegrationLZ/CreateFunction.json",
             "contentVersion": "1.0.0.0"
           },
           "parameters": {
