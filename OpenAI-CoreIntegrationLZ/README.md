@@ -63,6 +63,7 @@ Each solution created in the initiative have a dedicated configuration flow:
 - [SQL BPA Enhanced Assessment Logic App](../Arc-SQL%20BPA/README.md)
 - [Cost Monthly Check Logic App](../CostMonthlyCheck/README.md)
 - [Update Management Logic App](../UpdateManagement/README.md)
+- [UAnomalies Detection Logic App](../AnomaliesDetection/README.md)
 - [Function App](../FunctionAppSmartDocs/README.md): An empty box ready to be used for deploy custom Script\Application integrated with OpenAI. (Some example will be provided during the engagement. An App Developer skilled on Azure Function Customization and Deployment is needed).
 
 Please reach your CSA for be followed during the configuration.
