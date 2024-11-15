@@ -36,7 +36,7 @@
 <a href="https://github.com/DevOpsStyle/OpenAI-CoreIntegration/blob/V0.2/OpenAI-CoreIntegrationLZ/README.md#openai-coreintegrationlz" target="_blank">Configuration</a>
 
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FDevOpsStyle%2FOpenAI-CoreIntegration%2Frefs%2Fheads%2FV0.2%2FOpenAI-CoreIntegrationLZ%2FAIServicesForInfraELZ.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Frefs%2Fheads%2Fmain%2FOpenAI-CoreIntegrationLZ%2FAIServicesForInfraELZ.json" target="_blank">
   <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
