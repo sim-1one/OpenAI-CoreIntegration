@@ -1,4 +1,4 @@
-<h3>OpenAI-CoreIntegrationLZ</h3>
+<h3>AI for Operation Framwork LZ</h3>
  
 | **Parameters/Requirements** | **Information** | **Note** |
 | ------------- | ------------- | ------------- |
@@ -12,9 +12,10 @@
 | Open AI Name | Insert the name for the Open AI Deployed resource | Replace with the name |
 | Bing Name | Insert the name for the Bing Deployed resource | Replace with the name |
 | Sku Bing | Insert the required sku for the Bing Deployed resource | Replace with the chosed sku |
-| Workflows_SQL_BPA_Read Link_Generalized_name | Insert the name for the SQL BPA Logic App Deployed | Replace with the required name |
+| Workflows_SQL_BPA_AI_name | Insert the name for the SQL BPA Logic App Deployed | Replace with the required name |
 | Workflows_Open AI Cost Mngmt Monthly Check_name | Insert the name for the Cost Mgmt Logic App Deployed | Replace with the required name |
-| Workflows_Open AI Cost Mngmt Monthly Check_name | Insert the name for the Cost Mgmt Logic App Deployed | Replace with the required name |
+| Workflows_Open AI SmartUpdate | Insert the name for the SmartUpdate Logic App Deployed | Replace with the required name |
+| Workflows_Open AI AnomaliesDetection | Insert the name for the AnomaliesDetection Logic App Deployed | Replace with the required name |
 | Function RG | Insert the name for the Function App Resource Group | Replace with the required name |
 | Function RG Location | Insert the location for the RG where the Function will be placed | Replace with the location |
 | Function Name | Insert the name Function App Deployed | Replace with the required name |
@@ -63,7 +64,7 @@ Each solution created in the initiative have a dedicated configuration flow:
 - [SQL BPA Enhanced Assessment Logic App](../Arc-SQL%20BPA/README.md)
 - [Cost Monthly Check Logic App](../CostMonthlyCheck/README.md)
 - [Update Management Logic App](../UpdateManagement/README.md)
-- [UAnomalies Detection Logic App](../AnomaliesDetection/README.md)
+- [Anomalies Detection Logic App](../AnomaliesDetection/README.md)
 - [Function App](../FunctionAppSmartDocs/README.md): An empty box ready to be used for deploy custom Script\Application integrated with OpenAI. (Some example will be provided during the engagement. An App Developer skilled on Azure Function Customization and Deployment is needed).
 
 Please reach your CSA for be followed during the configuration.
