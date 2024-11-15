@@ -1,4 +1,4 @@
-<h3>Azure UpdateManager OpenAI integration: Configuration</h3>
+<h3>Azure Anomalies Detection integration: Configuration</h3>
  
 | **Parameters** | **Information** | **Note** |
 | ------------- | ------------- | ------------- |
