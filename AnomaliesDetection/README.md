@@ -98,7 +98,7 @@ Salve, a seguito di un analisi all'interno dell'infrastruttura monitorata, è st
 </html>
 ```
 > [!TIP]
-> The provided Logic App, as an artifact, will send an email without a condition. An improvement could be to manage the result using a condition, and if the > condition is not satisfied, send an e-mail, in order to avoid unattended results. The configuration is up to your requirements.
+> The provided Logic App, as an artifact, will send an email without a condition. An improvement could be to manage the result using a condition, and if the condition is not satisfied, send an e-mail, in order to avoid unattended results. The configuration is up to your requirements.
 
 ![Compose](./images/compose.jpg)
 
