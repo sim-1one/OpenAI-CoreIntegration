@@ -5,6 +5,7 @@ Welcome to the **Microsoft Azure AI for Operation Framework** repo! The purpose 
 | Arc-SQL BPA | Logic App used to Asses with Azure OpenAI your DBs on Azure ARC Solution | [Configuration Link](./Arc-SQL%20BPA/README.md) |
 | UpdateManager Integration | Logic App used to Integrate Azure UM with OpenAI comment | [Configuration Link](./UpdateManagement/README.md) |
 | CostMonthlyCheck Integration | Logic App used to Monitor Cost Monthly with OpenAI comment | [Configuration Link](./CostMonthlyCheck/README.md) |
+| Anomalies Detection Integration | Logic App used to Monitor Anomalies Detection | [Configuration Link](./AnomaliesDetection/README.md) |
 | AI for Operation Framework LZ | Foundation - ARM template for AI for Op Landing Zone | [Configuration Link](./OpenAI-CoreIntegrationLZ/README.md) |
 | Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System | [Configuration Link](./Sentinel/README.md) |
 
@@ -43,6 +44,14 @@ This template can be used for the deployment of a Logic App to send Monthly Cost
 <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
+<h2>Azure Anomalies Detection</h2>
+
+This template can be used for the deployment of a Logic App to monitor anomalies on AD and other scenario.
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FAnomaliesDetection%2FAnomaliesDetection.json" target="_blank">
+<img src="https://aka.ms/deploytoazurebutton"/>
+</a>
+
 <h2>Sentinel OpenAI integration</h2>
 
 
@@ -58,7 +67,12 @@ Microsoft VBD Azure AI for Operation Framework is designed to offer customers cu
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [siverza@microsoft.com](mailto:siverza@microsoft.com) - [tommasosacco@microsoft.com](mailto:tommasosacco@microsoft.com) - [saverio.lorenzini@microsoft.com](mailto:saverio.lorenzini@microsoft.com) - [gianluca.derossi@microsoft.com](mailto:gianluca.derossi@microsoft.com) with any additional questions or comments.
+contact:
+- [siverza@microsoft.com](mailto:siverza@microsoft.com) | [LinkedIn](https://www.linkedin.com/in/simone-verza/)
+- [tommasosacco@microsoft.com](mailto:tommasosacco@microsoft.com) | [LinkedIn](https://www.linkedin.com/in/tommasosaccoit/) 
+- [saverio.lorenzini@microsoft.com](mailto:saverio.lorenzini@microsoft.com) | [LinkedIn](https://www.linkedin.com/in/saveriolorenzini/)
+- [gianluca.derossi@microsoft.com](mailto:gianluca.derossi@microsoft.com) | [LinkedIn](https://www.linkedin.com/in/gderossi/)
+
 
 ## Trademarks
 
