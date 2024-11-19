@@ -72,6 +72,7 @@ contact:
 - [tommasosacco@microsoft.com](mailto:tommasosacco@microsoft.com) | [LinkedIn](https://www.linkedin.com/in/tommasosaccoit/) 
 - [saverio.lorenzini@microsoft.com](mailto:saverio.lorenzini@microsoft.com) | [LinkedIn](https://www.linkedin.com/in/saveriolorenzini/)
 - [gianluca.derossi@microsoft.com](mailto:gianluca.derossi@microsoft.com) | [LinkedIn](https://www.linkedin.com/in/gderossi/)
+- [adegregorio@microsoft.com](mailto:adegregorio@microsoft.com) | [LinkedIn](https://www.linkedin.com/in/andreadegregorioit/)
 
 
 ## Trademarks
