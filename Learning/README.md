@@ -6,7 +6,8 @@ This folder contains information and learning resources for various Azure and Op
 
 ---
 <br>
-## Contents
+</br>
+##Contents
 
 <img src="./images/AzureOpenAI.png" alt="Azure OpenAI" width="400"/></img>
 ### 1. OpenAI on Azure
@@ -24,6 +25,7 @@ This folder contains information and learning resources for various Azure and Op
   - [Getting Started with Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart?tabs=command-line%2Cjavascript-keyless%2Ctypescript-keyless%2Cpython-new&pivots=programming-language-python)
   ---
 <br>
+</br>
 <img src="./images/Azure%20Logic%20APp.jpg" alt="Logic Apps" width="400"/></img>
 ### 2. Azure Logic Apps
 - **Overview**: Azure Logic Apps simplifies the creation of automated workflows by connecting various services and applications. It is a low-code/no-code solution suitable for developers and non-developers alike.
@@ -40,6 +42,7 @@ This folder contains information and learning resources for various Azure and Op
   - [Tutorial for Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-build-schedule-recurring-logic-app-workflow)
   ---
 <br>
+</br>
 <img src="./images/Azure%20APIM.jpg" alt="APIM" width="400"/></img>
 ### 3. Azure API Management (APIM)
 - **Overview**: Azure API Management provides a comprehensive solution for managing, securing, and monitoring APIs. It is designed to help organizations expose their services securely while ensuring scalability and high performance.
@@ -56,6 +59,7 @@ This folder contains information and learning resources for various Azure and Op
   - [How to Create APIs with Azure APIM](https://learn.microsoft.com/en-us/azure/api-management/import-and-publish)
   ---
 <br>
+</br>
 <img src="./images/SDK.png" alt="SDK" width="400"/></img>
 ### 4. Artificial Intelligence (AI) and Machine Learning (ML) on Azure
 - **Overview**: Azure provides robust tools and frameworks for incorporating artificial intelligence (AI) and machine learning (ML) into business solutions. It supports a wide range of AI use cases, from large-scale language models to advanced deep learning frameworks.
@@ -71,6 +75,7 @@ This folder contains information and learning resources for various Azure and Op
   - [AI and Machine Learning Architecture Overview](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/)
   ---
 <br>
+</br>
 <img src="./images/model.jpg" alt="Learning" width="400"/></img>
 ### 5. Get started with Azure OpenAI Service (MS Learning) and Design Architectures
 - **Overview**: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.
