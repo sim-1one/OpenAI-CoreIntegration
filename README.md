@@ -1,3 +1,5 @@
+<img src="GIT.jpg" alt="AIforOperations" width="800"/></img>
+
 Welcome to the **Microsoft Azure AI for Operation Framework** repo! The purpose of this site is to provide sample OpenAI integration with LogicApp
 
  **Solution Name** | **Information** | **Configuration** |
@@ -11,7 +13,7 @@ Welcome to the **Microsoft Azure AI for Operation Framework** repo! The purpose 
 
 <h2>Learning Resources</h2>
 
-<img src="./Learning/images/Microsoft%20Learn.jpg" alt="Learning" width="800"/></img>
+<img src="./Learning/images/Microsoft%20Learn.jpg" alt="Learning" width="600"/></img>
 
 Explore detailed resources and guides on key Azure technologies and OpenAI Landing Zone Architectural Reference in the [Learning Folder](./Learning/README.md). This folder includes insights on:
 - OpenAI integration with Azure
