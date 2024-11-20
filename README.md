@@ -11,7 +11,8 @@ Welcome to the **Microsoft Azure AI for Operation Framework** repo! The purpose 
 
 <h2>Learning Resources</h2>
 
-<img src="./Learning/images/Microsoft%20Learn.jpg" alt="Learning" width="400"/></img>
+<img src="./Learning/images/Microsoft%20Learn.jpg" alt="Learning" width="800"/></img>
+
 Explore detailed resources and guides on key Azure technologies and OpenAI Landing Zone Architectural Reference in the [Learning Folder](./Learning/README.md). This folder includes insights on:
 - OpenAI integration with Azure
 - Building workflows with Logic Apps
