@@ -59,7 +59,7 @@ This folder contains information and learning resources for various Azure and Op
   ---
 
 
-<img src="./images/SDK.png" alt="SDK" width="400"/></img>
+<img src="./images/AC.png" alt="SDK" width="400"/></img>
 ### 4. Artificial Intelligence (AI) and Machine Learning (ML) on Azure
 - **Overview**: Azure provides robust tools and frameworks for incorporating artificial intelligence (AI) and machine learning (ML) into business solutions. It supports a wide range of AI use cases, from large-scale language models to advanced deep learning frameworks.
 - **Use Cases**:
