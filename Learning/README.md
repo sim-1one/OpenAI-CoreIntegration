@@ -1,6 +1,6 @@
 # Learning Repository
 
-![Learn](./images/Learn.png)
+<img src="./images/Learn.png" alt="Learn" width="400"/>
 
 This folder contains information and learning resources for various Azure and OpenAI technologies. The goal is to provide a comprehensive understanding of these tools, their applications, and how to use them effectively.
 
@@ -8,7 +8,7 @@ This folder contains information and learning resources for various Azure and Op
 
 ## Contents
 
-![Azure OpenAI](./images/AzureOpenAI.png)
+<img src="./images/AzureOpenAI.png" alt="Azure OpenAI" width="400"/>
 ### 1. OpenAI on Azure
 - **Overview**: OpenAI on Azure enables developers to integrate advanced AI models like GPT and Codex into their applications. These models can help with text generation, summarization, code completion, and more.
 - **Use Cases**:
@@ -23,7 +23,7 @@ This folder contains information and learning resources for various Azure and Op
   - [Azure OpenAI Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
   - [Getting Started with Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart?tabs=command-line%2Cjavascript-keyless%2Ctypescript-keyless%2Cpython-new&pivots=programming-language-python)
 
-![Logic Apps](./images/Azure%20Logic%20APp.jpg)
+<img src="./images/Azure%20Logic%20APp.jpg" alt="Logic Apps" width="400"/>
 ### 2. Azure Logic Apps
 - **Overview**: Azure Logic Apps simplifies the creation of automated workflows by connecting various services and applications. It is a low-code/no-code solution suitable for developers and non-developers alike.
 - **Use Cases**:
@@ -38,7 +38,7 @@ This folder contains information and learning resources for various Azure and Op
   - [Azure Logic Apps Overview](https://learn.microsoft.com/en-us/azure/logic-apps/)
   - [Tutorial for Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/tutorial-build-schedule-recurring-logic-app-workflow)
 
-![APIM](./images/Azure%20APIM.jpg)
+<img src="./images/Azure%20APIM.jpg" alt="APIM" width="400"/>
 ### 3. Azure API Management (APIM)
 - **Overview**: Azure API Management provides a comprehensive solution for managing, securing, and monitoring APIs. It is designed to help organizations expose their services securely while ensuring scalability and high performance.
 - **Use Cases**:
@@ -53,7 +53,7 @@ This folder contains information and learning resources for various Azure and Op
   - [Introduction to Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/)
   - [How to Create APIs with Azure APIM](https://learn.microsoft.com/en-us/azure/api-management/import-and-publish)
 
-![Learn](./images/SDK.png)
+<img src="./images/SDK.png" alt="SDK" width="400"/>
 ### 4. Artificial Intelligence (AI) and Machine Learning (ML) on Azure
 - **Overview**: Azure provides robust tools and frameworks for incorporating artificial intelligence (AI) and machine learning (ML) into business solutions. It supports a wide range of AI use cases, from large-scale language models to advanced deep learning frameworks.
 - **Use Cases**:
@@ -67,7 +67,7 @@ This folder contains information and learning resources for various Azure and Op
 - **Resources**:
   - [AI and Machine Learning Architecture Overview](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/)
 
-![Learning](./images/model.jpg)
+<img src="./images/model.jpg" alt="Learning" width="400"/>
 ### 5. Get started with Azure OpenAI Service (MS Learning) and Design Architectures
 - **Overview**: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.
 - **Learning objectives**: By the end of this module, you'll be able to:
@@ -77,5 +77,3 @@ This folder contains information and learning resources for various Azure and Op
 - **Resources**:
   - [Azure OpenAI Service Modules](https://learn.microsoft.com/en-us/training/modules/get-started-openai/)
   - [Module assessment](https://learn.microsoft.com/training/modules/get-started-openai/9-knowledge-check/)
-
-
