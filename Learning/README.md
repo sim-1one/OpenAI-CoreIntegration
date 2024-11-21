@@ -84,4 +84,4 @@ This folder contains information and learning resources for various Azure and Op
     - Generate completions to prompts and begin to manage model parameters.
 - **Resources**:
   - [Azure OpenAI Service Modules](https://learn.microsoft.com/en-us/training/modules/get-started-openai/)
-  - [Module assessment](https://learn.microsoft.com/training/modules/get-started-openai/9-knowledge-check/)
+  - [Module assessment](https://learn.microsoft.com/it-it/training/modules/get-started-openai/1-introduction/)
