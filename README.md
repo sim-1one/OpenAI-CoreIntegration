@@ -1,3 +1,5 @@
+<img src="GIT.jpg" alt="AIforOperations" width="800"/></img>
+
 Welcome to the **Microsoft Azure AI for Operation Framework** repo! The purpose of this site is to provide sample OpenAI integration with LogicApp
 
  **Solution Name** | **Information** | **Configuration** |
@@ -8,6 +10,17 @@ Welcome to the **Microsoft Azure AI for Operation Framework** repo! The purpose 
 | Anomalies Detection Integration | Logic App used to Monitor Anomalies Detection | [Configuration Link](./AnomaliesDetection/README.md) |
 | AI for Operation Framework LZ | Foundation - ARM template for AI for Op Landing Zone | [Configuration Link](./OpenAI-CoreIntegrationLZ/README.md) |
 | Sentinel Integration | Logic App used to Integrate Azure OpenAI with your Sentinel SIEM System | [Configuration Link](./Sentinel/README.md) |
+
+<h2>Learning Resources</h2>
+
+<img src="./Learning/images/Microsoft%20Learn.jpg" alt="Learning" width="600"/></img>
+
+Explore detailed resources and guides on key Azure technologies and OpenAI Landing Zone Architectural Reference in the [Learning Folder](./Learning/README.md). This folder includes insights on:
+- OpenAI integration with Azure
+- Building workflows with Logic Apps
+- Managing APIs with Azure API Management
+- Using AI and Machine Learning on Azure
+- Other essential Azure technologies
 
 
 <h2>Prerequisites</h2>
@@ -60,6 +73,7 @@ This template can be used for the deployment of a Logic App in order to be trigg
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsim-1one%2FOpenAI-CoreIntegration%2Fmain%2FSentinel%2FSentinel-Template.json" target="_blank">
 <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
+
 
 ## Contributing
 
